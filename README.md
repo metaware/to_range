@@ -2,6 +2,19 @@
 
 Small Ruby Gem to Convert strings (parseable) into Range Objects
 
+## Usage
+
+    irb(main):001:0> "1..10".to_range
+    => 1..10
+    => PROFIT!
+
+For any ambiguous cases, where there might be multiple matches of a possible range, This library assumes you need only the first possible, valid-looking Range match, ex:
+
+    irb(main):001:0> "1.10..50..100".to_range
+    => 10..50
+
+**PS: It blows on your face, if it's unable to find a possible Parseable match.**
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -15,12 +28,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install to_range
-
-## Usage
-
-    irb(main):001:0> "1..10".to_range
-    => 1..10
-    => PROFIT!
 
 ## Contributing
 
