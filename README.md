@@ -1,4 +1,4 @@
-# ToRange [![Code Climate](https://codeclimate.com/github/metaware/to_range/badges/gpa.svg)](https://codeclimate.com/github/metaware/to_range)
+# ToRange [![Code Climate](https://codeclimate.com/github/metaware/to_range/badges/gpa.svg)](https://codeclimate.com/github/metaware/to_range) [![Build Status](https://travis-ci.org/metaware/to_range.svg?branch=master)](https://travis-ci.org/metaware/to_range)
 
 Small Ruby Gem to Convert strings (parseable) into Range Objects
 
