@@ -24,7 +24,7 @@ describe String do
 
     context 'ambiguous cases' do
 
-      it 'parses the first parseable occurrence' do
+      it 'parses the first parsable occurrence' do
         expect('1..5..10'.to_range).to eq(1..5)
         expect('1.5..10'.to_range).to eq(5..10)
         expect('15..10...20'.to_range).to eq(15..10)
@@ -39,7 +39,7 @@ describe String do
 
     context "exception cases" do
 
-      it 'raises an exception when the string is not parseable' do
+      it 'raises an exception when the string is not parsable' do
         expect { '1.4.6'.to_range }.to raise_exception(StringToRangeConversionFailed)
         expect { '146'.to_range }.to raise_exception(StringToRangeConversionFailed)
         expect { '1.4..'.to_range }.to raise_exception(StringToRangeConversionFailed)

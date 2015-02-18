@@ -2,7 +2,7 @@
 
 ![to_range Logo](https://raw.github.com/metaware/to_range/master/to_range.png)
 
-Small Ruby Gem to Convert strings (parseable) into Range Objects
+Ruby Gem to Convert strings (parsable) into Range Objects
 
 ## Usage
 
@@ -15,7 +15,7 @@ For any ambiguous cases, where there might be multiple matches of a possible ran
     irb(main):001:0> "1.10..50..100".to_range
     => 10..50
 
-**PS: It blows on your face, if it's unable to find a possible Parseable match.**
+**PS: It blows on your face, if it's unable to find a possible parsable match.**
 
 ## Installation
 
