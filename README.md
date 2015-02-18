@@ -1,4 +1,4 @@
-# ToRange [![Code Climate](https://codeclimate.com/github/metaware/to_range/badges/gpa.svg)](https://codeclimate.com/github/metaware/to_range) [![Build Status](https://travis-ci.org/metaware/to_range.svg?branch=master)](https://travis-ci.org/metaware/to_range)
+# to_range [![Code Climate](https://codeclimate.com/github/metaware/to_range/badges/gpa.svg)](https://codeclimate.com/github/metaware/to_range) [![Build Status](https://travis-ci.org/metaware/to_range.svg?branch=master)](https://travis-ci.org/metaware/to_range)
 
 ![to_range Logo](https://raw.github.com/metaware/to_range/master/to_range.png)
 
