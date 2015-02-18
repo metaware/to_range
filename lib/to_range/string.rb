@@ -1,12 +1,13 @@
-class ToRangeParseFailed < StandardError; end
+class StringToRangeConversionFailed < StandardError; end
 
 class String
 
   def to_range
     str = scan(/\d+\.{2,3}\d+/).first
-    dots = str.count('.')
-    if dots > 3
-      raise ToRangeParseFailed
+    if str
+      dots = str.count('.')
+    else
+      raise StringToRangeConversionFailed
     end
     three_dots = (dots == 3)
     arr = three_dots ? str.split('...') : str.split('..')

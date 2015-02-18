@@ -40,11 +40,12 @@ describe String do
     context "exception cases" do
 
       it 'raises an exception when the string is not parseable' do
-        expect { '1.4.6'.to_range }.to raise_exception
-        expect { '146'.to_range }.to raise_exception
-        expect { '1.4..'.to_range }.to raise_exception
-        expect { '..1.4..'.to_range }.to raise_exception
-        expect { '..14..'.to_range }.to raise_exception
+        expect { '1.4.6'.to_range }.to raise_exception(StringToRangeConversionFailed)
+        expect { '146'.to_range }.to raise_exception(StringToRangeConversionFailed)
+        expect { '1.4..'.to_range }.to raise_exception(StringToRangeConversionFailed)
+        expect { '..1.4..'.to_range }.to raise_exception(StringToRangeConversionFailed)
+        expect { '..14..'.to_range }.to raise_exception(StringToRangeConversionFailed)
+        expect { '1234'.to_range }.to raise_exception(StringToRangeConversionFailed)
       end
 
     end
