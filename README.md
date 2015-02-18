@@ -1,6 +1,6 @@
 # ToRange
 
-TODO: Write a gem description
+Small Ruby Gem to Convert strings (parseable) into Range Objects
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    irb(main):001:0> "1..10".to_range
+    => 1..10
+    => PROFIT!
 
 ## Contributing
 
