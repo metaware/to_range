@@ -7,7 +7,11 @@ Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "features --format pretty"
 end
 
-task :default => [:features, :spec]
+if RUBY_VERSION > '1.9.3'
+  task :default => [:features, :spec]
+else
+  task :default => [:spec]
+end
 
 RSpec::Core::RakeTask.new
 
