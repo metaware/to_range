@@ -17,6 +17,10 @@ For any ambiguous cases, where there might be multiple matches of a possible ran
 
 **PS: It blows on your face, if it's unable to find a possible parsable match.**
 
+## TODO: 
+
+- Add support for Date/Time ranges? (Not in huge favor but if there's interest, I can take a stab at it.)
+
 ## Installation
 
 Add this line to your application's Gemfile:
